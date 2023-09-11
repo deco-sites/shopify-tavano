@@ -3,7 +3,7 @@
     "deco-sites/shopify-tavano/": "./",
     "$store/": "./",
     "deco-sites/storefront/": "./",
-    "apps/": "https://denopkg.com/deco-cx/apps@b4ae304f6285f997ecb0eddecb19006b0f8b1788/",
+    "apps/": "https://denopkg.com/deco-cx/apps@2f70fc8266d5a1a6eb3a4d0bdf1b5c6c66837ea6/",
     "deco/": "https://denopkg.com/deco-cx/deco@1.35.10/",
     "$fresh/": "https://denopkg.com/deco-cx/fresh@1.3.6/",
     "preact": "https://esm.sh/preact@10.15.1",
