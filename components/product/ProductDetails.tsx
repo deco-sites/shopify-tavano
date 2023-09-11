@@ -8,7 +8,8 @@ import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
 import AddToCartButtonShopify from "$store/islands/AddToCartButton/shopify.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
-import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
+import ShippingSimulationVtex from "$store/islands/ShippingSimulation/vtex.tsx";
+import ShippingSimulationShopify from "$store/islands/ShippingSimulation/shopify.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
@@ -177,8 +178,16 @@ function ProductInfo({ page, layout }: { page: ProductDetailsPage } & Props) {
       </div>
       {/* Shipping Simulation */}
       <div class="mt-8">
+        {platform === "shopify" && (
+          <ShippingSimulationShopify
+            items={[{
+              variantId: product.sku,
+              quantity: 1,
+            }]}
+          />
+        )}
         {platform === "vtex" && (
-          <ShippingSimulation
+          <ShippingSimulationVtex
             items={[{
               id: Number(product.sku),
               quantity: 1,

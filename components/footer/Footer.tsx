@@ -11,6 +11,7 @@ import Social from "$store/components/footer/Social.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
+import { usePlatform } from "$store/sdk/usePlatform.tsx";
 
 export type Item = {
   label: string;
@@ -179,6 +180,8 @@ function Footer({
     },
   },
 }: Props) {
+  const platform = usePlatform();
+  
   const _logo = layout?.hide?.logo ? <></> : <Logo logo={logo} />;
   const _newsletter = layout?.hide?.newsletter ? <></> : (
     <Newsletter
@@ -187,6 +190,7 @@ function Footer({
         tiled: layout?.variation == "Variation 4" ||
           layout?.variation == "Variation 5",
       }}
+      platform={platform}
     />
   );
   const _sectionLinks = layout?.hide?.sectionLinks ? <></> : (
