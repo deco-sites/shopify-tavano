@@ -2,6 +2,8 @@ import { useSignal } from "@preact/signals";
 import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
 
+import { usePlatform } from "$store/sdk/usePlatform.tsx";
+
 export interface Form {
   placeholder?: string;
   buttonText?: string;
@@ -19,13 +21,15 @@ export interface Props {
   layout?: {
     tiled?: boolean;
   };
+  platform: ReturnType<typeof usePlatform>;
 }
 
 function Newsletter(
-  { content, layout = {} }: Props,
+  { content, layout = {}, platform }: Props,
 ) {
   const { tiled = false } = layout;
   const loading = useSignal(false);
+
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -36,7 +40,26 @@ function Newsletter(
       const email =
         (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
 
-      await Runtime.vtex.actions.newsletter.subscribe({ email });
+      const date = new Date(Date.now())
+
+      if(platform == "vtex"){
+        await Runtime.vtex.actions.newsletter.subscribe({ email });
+      }
+
+      if(platform == "shopify"){
+        return await Runtime.shopify.actions.newsletter.subscribe({
+          input: {
+            email: email,
+            emailMarketingConsent:{
+              marketingState: "SUBSCRIBED",
+              marketingOptInLevel: "SINGLE_OPT_IN",
+              consentUpdatedAt: date.toISOString()
+            },
+            tags: ["sss"],
+          }
+        });
+      }
+
     } finally {
       loading.value = false;
     }
