@@ -1,10 +1,9 @@
 {
   "imports": {
     "deco-sites/shopify-tavano/": "./",
-
     "$store/": "./",
     "deco-sites/storefront/": "./",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.3.1/",
+    "apps/": "https://denopkg.com/deco-cx/apps@18418cdd69d769b08b80c5022a3b3d5f4d972504/",
     "deco/": "https://denopkg.com/deco-cx/deco@1.35.0/",
     "$fresh/": "https://denopkg.com/deco-cx/fresh@1.3.6/",
     "preact": "https://esm.sh/preact@10.15.1",
