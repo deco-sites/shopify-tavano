@@ -6,21 +6,25 @@ export interface Question {
   answer: string;
 }
 
+export interface ContactTwo {
+  titleTwo?: string;
+}
+
 export interface Contact {
   title?: string;
-  /** @format html */
-  description?: string;
-  link?: {
-    text: string;
-    href: string;
-  };
 }
 
 export interface Props {
   title?: string;
+  /**
+   * @default teste
+   */
   description?: string;
   questions?: Question[];
-  contact?: Contact;
+  /**
+   * @default { titleTwo: teste}
+   */
+  contact?: Contact | ContactTwo;
   layout?: {
     variation?: "Compact" | "Full" | "Side to side";
     headerAlignment?: "center" | "left";

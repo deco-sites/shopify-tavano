@@ -4,10 +4,7 @@ import Button from "$store/components/ui/Button.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useCart } from "apps/shopify/hooks/useCart.ts";
 
-import { Runtime } from "$store/runtime.ts";
-import { Data } from "apps/shopify/utils/queries/draftOrderCalculate.ts";
-
-type Simulation = Data['payload']['calculatedDraftOrder']
+type Simulation = any
 
 export interface Props {
   items: {
@@ -30,7 +27,7 @@ function ShippingContent({ simulation }: {
 
   console.log(simulation)
 
-  const methods = simulation.value?.availableShippingRates
+  const methods = simulation.value?.calculatedDraftOrder.availableShippingRates
 
   if (simulation.value == null) {
     return null;
@@ -71,7 +68,7 @@ function ShippingSimulation({ items }: Props) {
   const postalCode = useSignal("");
   const loading = useSignal(false);
   const simulateResult = useSignal<Simulation | null>(null);
-  const { cart } = useCart();
+  const { simulate } = useCart();
 
   const handleSimulation = useCallback(async () => {
     console.log("rodou")
@@ -86,17 +83,17 @@ function ShippingSimulation({ items }: Props) {
         postalCode: postalCode.value,
         country: cart.value?.storePreferencesData.countryCode || "BRA",
       }); */
-      simulateResult.value = await Runtime.shopify.actions.order.draftOrderCalculate({
+
+      simulateResult.value = await simulate({
         input: {
             lineItems: items,
             shippingAddress: {
-                zip: postalCode.value,
-                countryCode: "BR",
-                province: "São Paulo",
+              zip: postalCode.value,
+              countryCode: "BR"
             }
         }
       })
-
+      
     } finally {
       loading.value = false;
     }
