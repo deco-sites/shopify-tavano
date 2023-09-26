@@ -22,7 +22,7 @@ const formatShippingEstimate = (estimate: string) => {
 };
 
 function ShippingContent({ simulation }: {
-  simulation: Signal<Simulation | null>;
+  simulation: number;
 }) {
 
   console.log(simulation)
