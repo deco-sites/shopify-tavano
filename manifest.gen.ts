@@ -10,24 +10,25 @@ import * as $$$$$$3 from "./sections/Images/ShoppableBanner.tsx";
 import * as $$$$$$4 from "./sections/Images/BannerGrid.tsx";
 import * as $$$$$$5 from "./sections/Images/ImageGallery.tsx";
 import * as $$$$$$6 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$7 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$8 from "./sections/Content/Logos.tsx";
-import * as $$$$$$9 from "./sections/Content/Faq.tsx";
-import * as $$$$$$10 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$11 from "./sections/Library/Library.tsx";
-import * as $$$$$$12 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$13 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$14 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$15 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$16 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$17 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$18 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$19 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$20 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$21 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$22 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$23 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$24 from "./sections/Header/Header.tsx";
+import * as $$$$$$7 from "./sections/Animation/animation.tsx";
+import * as $$$$$$8 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$9 from "./sections/Content/Logos.tsx";
+import * as $$$$$$10 from "./sections/Content/Faq.tsx";
+import * as $$$$$$11 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$12 from "./sections/Library/Library.tsx";
+import * as $$$$$$13 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$14 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$15 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$16 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$17 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$18 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$19 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$20 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$21 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$22 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$23 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$24 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$25 from "./sections/Header/Header.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -36,33 +37,34 @@ const manifest = {
     "deco-sites/shopify-tavano/loaders/Layouts/ProductCard.tsx": $$$0,
   },
   "sections": {
+    "deco-sites/shopify-tavano/sections/Animation/animation.tsx": $$$$$$7,
     "deco-sites/shopify-tavano/sections/Category/CategoryBanner.tsx": $$$$$$1,
     "deco-sites/shopify-tavano/sections/Category/CategoryList.tsx": $$$$$$2,
-    "deco-sites/shopify-tavano/sections/Content/Benefits.tsx": $$$$$$10,
-    "deco-sites/shopify-tavano/sections/Content/Faq.tsx": $$$$$$9,
-    "deco-sites/shopify-tavano/sections/Content/Logos.tsx": $$$$$$8,
-    "deco-sites/shopify-tavano/sections/Content/Testimonials.tsx": $$$$$$7,
+    "deco-sites/shopify-tavano/sections/Content/Benefits.tsx": $$$$$$11,
+    "deco-sites/shopify-tavano/sections/Content/Faq.tsx": $$$$$$10,
+    "deco-sites/shopify-tavano/sections/Content/Logos.tsx": $$$$$$9,
+    "deco-sites/shopify-tavano/sections/Content/Testimonials.tsx": $$$$$$8,
     "deco-sites/shopify-tavano/sections/Footer/Footer.tsx": $$$$$$0,
-    "deco-sites/shopify-tavano/sections/Header/Header.tsx": $$$$$$24,
+    "deco-sites/shopify-tavano/sections/Header/Header.tsx": $$$$$$25,
     "deco-sites/shopify-tavano/sections/Images/BannerGrid.tsx": $$$$$$4,
     "deco-sites/shopify-tavano/sections/Images/Carousel.tsx": $$$$$$6,
     "deco-sites/shopify-tavano/sections/Images/ImageGallery.tsx": $$$$$$5,
     "deco-sites/shopify-tavano/sections/Images/ShoppableBanner.tsx": $$$$$$3,
-    "deco-sites/shopify-tavano/sections/Library/Library.tsx": $$$$$$11,
-    "deco-sites/shopify-tavano/sections/Links/LinkTree.tsx": $$$$$$21,
-    "deco-sites/shopify-tavano/sections/Links/Shortcuts.tsx": $$$$$$22,
+    "deco-sites/shopify-tavano/sections/Library/Library.tsx": $$$$$$12,
+    "deco-sites/shopify-tavano/sections/Links/LinkTree.tsx": $$$$$$22,
+    "deco-sites/shopify-tavano/sections/Links/Shortcuts.tsx": $$$$$$23,
     "deco-sites/shopify-tavano/sections/Miscellaneous/CampaignTimer.tsx":
-      $$$$$$16,
-    "deco-sites/shopify-tavano/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$17,
-    "deco-sites/shopify-tavano/sections/Newsletter/Newsletter.tsx": $$$$$$23,
-    "deco-sites/shopify-tavano/sections/Product/ProductDetails.tsx": $$$$$$15,
-    "deco-sites/shopify-tavano/sections/Product/ProductShelf.tsx": $$$$$$14,
-    "deco-sites/shopify-tavano/sections/Product/SearchResult.tsx": $$$$$$13,
-    "deco-sites/shopify-tavano/sections/Product/Wishlist.tsx": $$$$$$12,
-    "deco-sites/shopify-tavano/sections/Social/InstagramPosts.tsx": $$$$$$19,
-    "deco-sites/shopify-tavano/sections/Social/WhatsApp.tsx": $$$$$$18,
-    "deco-sites/shopify-tavano/sections/Theme/Theme.tsx": $$$$$$20,
+    "deco-sites/shopify-tavano/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$18,
+    "deco-sites/shopify-tavano/sections/Newsletter/Newsletter.tsx": $$$$$$24,
+    "deco-sites/shopify-tavano/sections/Product/ProductDetails.tsx": $$$$$$16,
+    "deco-sites/shopify-tavano/sections/Product/ProductShelf.tsx": $$$$$$15,
+    "deco-sites/shopify-tavano/sections/Product/SearchResult.tsx": $$$$$$14,
+    "deco-sites/shopify-tavano/sections/Product/Wishlist.tsx": $$$$$$13,
+    "deco-sites/shopify-tavano/sections/Social/InstagramPosts.tsx": $$$$$$20,
+    "deco-sites/shopify-tavano/sections/Social/WhatsApp.tsx": $$$$$$19,
+    "deco-sites/shopify-tavano/sections/Theme/Theme.tsx": $$$$$$21,
   },
   "apps": {
     "deco-sites/shopify-tavano/apps/decohub.ts": $$$$$$$$$$$0,

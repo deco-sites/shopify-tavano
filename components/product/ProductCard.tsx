@@ -233,7 +233,7 @@ function ProductCard(
                 ? ""
                 : (
                   <h2 class="truncate text-base lg:text-lg text-base-content">
-                    {name}
+                    {product.isVariantOf?.name} - {name}
                   </h2>
                 )}
               {l?.hide?.productDescription
