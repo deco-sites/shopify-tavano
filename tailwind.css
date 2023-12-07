@@ -38,6 +38,24 @@
   }
 }
 
+/* Animação Bottom */
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-bottom {
+  animation: fade-in-bottom 1s ease-out;
+}
+
 /* Animação Fade-in */
 @keyframes fade-in {
   from {

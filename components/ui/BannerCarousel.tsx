@@ -3,7 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 /**
@@ -13,7 +13,7 @@ export interface Banner {
   /** @description desktop otimized image */
   desktop: ImageWidget;
   /** @description mobile otimized image */
-  mobile: ImageWidget;
+  mobile: VideoWidget;
   /** @description Image's alt text */
   alt: string;
   action?: {
